@@ -1,0 +1,6 @@
+{
+  "name": "세계 나라 탐험 퀴즈",
+  "description": "초등학교 2학년 학생들을 위한 세계 여러 나라 문화를 배우는 퀴즈 웹앱",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

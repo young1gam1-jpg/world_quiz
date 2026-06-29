@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans KR", sans-serif;
+}
+
+/* Custom animations and styling for custom elements */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}
+
+.animate-shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Custom text shadows for thick bold typography headers */
+.bold-text-shadow {
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.bold-accent-shadow {
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Chunky card layout designs matching the Bold Typography theme */
+.chunky-card {
+  background: white;
+  border-radius: 24px;
+  color: #1e1b4b;
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 6px solid transparent;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.chunky-card-unselected {
+  border: 6px solid #e2e8f0;
+}
+
+.chunky-card-selected {
+  border-color: #facc15;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 0 #facc15;
+  background: #fffdf0;
+}
+
+/* Chunky 3D buttons */
+.chunky-button {
+  transition: all 0.12s ease;
+  font-weight: 900;
+  border-radius: 50px;
+}
+
+/* Base custom styles to guarantee beautiful gradients and scrollbars */
+html, body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #333333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 3D card flipping perspective */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+
